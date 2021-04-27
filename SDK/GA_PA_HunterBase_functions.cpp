@@ -1,0 +1,44 @@
+﻿// Name: hsh, Version: 2
+
+#include "../pch.h"
+
+/*!!DEFINE!!*/
+
+/*!!HELPER_DEF!!*/
+
+/*!!HELPER_INC!!*/
+
+#ifdef _MSC_VER
+	#pragma pack(push, 0x01)
+#endif
+
+namespace CG
+{
+//---------------------------------------------------------------------------
+// Functions
+//---------------------------------------------------------------------------
+
+// Function GA_PA_HunterBase.GA_PA_HunterBase_C.CustomCommitCooldown
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+void UGA_PA_HunterBase_C::CustomCommitCooldown()
+{
+	static auto fn = nullptr;
+	if (!fn)
+		fn = 
+UObject::FindObject<UFunction>("Function GA_PA_HunterBase.GA_PA_HunterBase_C.CustomCommitCooldown");
+
+	UGA_PA_HunterBase_C_CustomCommitCooldown_Params params;
+
+	auto flags = fn->FunctionFlags;
+
+	UObject::ProcessEvent(fn, &params);
+	fn->FunctionFlags = flags;
+
+}
+
+
+}
+
+#ifdef _MSC_VER
+	#pragma pack(pop)
+#endif
